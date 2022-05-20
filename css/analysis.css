@@ -1,0 +1,24 @@
+    .main-content {
+        position: relative;
+        z-index: 1;
+        padding: 30px 15px 0 15px;
+    }
+    
+    .bg-boxshadow {
+        -webkit-box-shadow: 0 0 20px rgb(115 105 215 / 8%);
+        box-shadow: 0 0 20px rgb(115 105 215 / 8%);
+        border-radius: 3px;
+        border: 1px solid #dbdbdb;
+    }
+    
+    .success-text {
+        color: #71c016;
+    }
+    
+    .mb-30 {
+        margin-bottom: 30px !important;
+    }
+    
+    .img-round {
+        width: 48px;
+    }

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/address.css">
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Utopian Night</title>
+</head>
+
+<body>
+    <div class="i-header">
+        <img class="i-title-logo" src="./images/logo.png" />
+
+        <div class="i-title">Utopia Moon Night in Love</div>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="show.html">EXHIBITION</a>
+                <a href="analysis.html">ANALYSIS</a>
+                <a href="address.html">contact</a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="show.html">EXHIBITION</a></li>
+            <li><a href="analysis.html">ANALYSIS</a></li>
+            <li><a href="address.html">contact</a></li>
+
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="i-map-content">
+                    <h2 class="text-monospace">we address</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.9945125986706!2d-121.91365228442783!3d37.53162663388385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc6a4e66b4c4b%3A0xd5ba7c9f069b8e3!2sOhlone%20College%20Foundation%2C%2043600%20Mission%20Blvd%2C%20Fremont%2C%20CA%2094539%E7%BE%8E%E5%9B%BD!5e0!3m2!1szh-CN!2s!4v1652344239544!5m2!1en!2s"
+                        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+            <h2 class="text-monospace">contact us</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="form-group">
+
+                    <label for="exampleInputEmail1">
+                            user name
+                        </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" />
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="form-group">
+
+                    <label for="exampleInputEmail1">
+                            full name
+                        </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" />
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="form-group">
+
+                    <label for="exampleInputEmail1">
+                            sex
+                        </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" />
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="form-group">
+
+                    <label for="exampleInputEmail1">
+                            email
+                        </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" />
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="form-group">
+
+                    <label for="exampleInputEmail1">
+                            phone number
+                        </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" />
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="form-group">
+
+                    <label for="exampleInputEmail1">
+                            address
+                        </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" />
+                </div>
+            </div>
+
+
+        </div>
+        <button type="submit" class="btn btn-primary">
+            Submit
+        </button>
+        <div class="row">
+
+            <address>
+                  Ohlone College Foundation, 43600 Mission Blvd, Fremont, CA 94539.USA
+               </address>
+
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $(".i-main-card").on("click", ".i-card", function() {
+                var imgsrc = $(this).find("img").attr("src");
+                $(".bigimg").attr("src", imgsrc);
+                $(".maskweap").show();
+            });
+            $(".maskweap").on("click", function() {
+                $(".maskweap").hide();
+            });
+        })
+        $(function() {
+            $(".i-main-card").on("click", ".i-card", function() {
+                var imgsrc = $(this).find("img").attr("src");
+                $(".bigimg").attr("src", imgsrc);
+                $(".maskweap").show();
+            });
+            $(".maskweap").on("click", function() {
+                $(".maskweap").hide();
+            });
+        })
+    </script>
+
+</body>
+
+</html>

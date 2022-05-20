@@ -1,0 +1,281 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+}
+
+a:link,
+a:visited {
+    display: block;
+    width: 140px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #fc5531;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover,
+a:active {
+    background-color: #13cbd8;
+}
+
+.i-title {
+    font-size: 40px;
+    padding-right: 50px;
+    color: #FFFFFF;
+}
+
+.i-title-logo {
+    display: block;
+    width: 64px;
+}
+
+.i-header {
+    background-color: #fc5531;
+    padding-left: 50px;
+    align-items: center;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown {
+    display: none;
+}
+
+.i-main {
+    height: 700px;
+    margin: 20px;
+}
+
+.i-about {
+    margin: 20px;
+    padding: 50px;
+}
+
+.i-about-top {
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.i-about-image {
+    width: 100%;
+}
+
+.i-main-top {
+    background-color: #fc5531;
+    height: 35%;
+    /* 图片背景 */
+    background: url(../images/6.jpg) no-repeat center center;
+    /* 长边铺满 */
+    background-size: cover;
+}
+
+.i-main-card {
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.i-card {
+    width: 30%;
+    height: auto;
+    box-shadow: 0px 0px 10px #ccc;
+    margin: 20px;
+}
+
+.i-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f5f5;
+    height: 60px;
+    margin: 20px;
+}
+
+.i-contact {
+    margin: 20px;
+    padding: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.i-card-image {
+    width: 100%;
+    height: 70%;
+}
+
+.i-card-image:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.i-card-footer {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding: 5px;
+}
+
+
+/* 媒体查询中屏幕 */
+
+@media screen and (max-width: 1200px) {
+    .i-title {
+        font-size: 20px;
+    }
+    .i-main {
+        height: auto;
+    }
+    .i-main-card {
+        flex-direction: row;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .i-card {
+        width: 40%;
+    }
+    .i-about {
+        display: block;
+    }
+    .i-footer {
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+
+/* 媒体查询小屏幕 */
+
+@media screen and (max-width: 600px) {
+    ul {
+        display: none;
+    }
+    /* 设置下拉按钮的样式 */
+    .dropbtn {
+        background-color: #fc5531;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    /* 容器 <div> - 需要放置下拉内容 */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        padding-right: 20px;
+    }
+    /* 下拉内容（默认隐藏） */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        left: -50px;
+        background-color: #f9f9f9;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    /* 下拉链接 */
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    /* 悬停时更改下拉链接的颜色 */
+    .dropdown-content a:hover {
+        border-bottom: 1px solid white;
+    }
+    /* 悬停时显示下拉菜单 */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .i-title {
+        font-size: 20px;
+        display: none;
+    }
+    .i-title-logo {
+        display: block;
+        width: 64px;
+    }
+    .i-main {
+        height: auto;
+    }
+    .i-main-card {
+        flex-direction: column;
+        width: 90%;
+        display: block;
+    }
+    .i-card {
+        width: 100%;
+    }
+    .i-about {
+        display: block;
+    }
+    .i-footer {
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+.maskweap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: none;
+}
+
+.maskimg {
+    background-image: url(../images/close.png);
+    width: 32px;
+    height: 32px;
+    margin-left: 468px;
+    background-size: 100% 100%;
+}
+
+.maskweap .imgshow {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.maskweap .imgshow img {
+    display: block;
+    width: 500px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #FFFFFF;
+}
